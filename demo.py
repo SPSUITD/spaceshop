@@ -6,7 +6,7 @@ class Fruits_MENU(pygame.sprite.Sprite):
     def __init__(self, x, y):
         pygame.sprite.Sprite.__init__(self)
         self.image = pygame.Surface((50, 50))
-        self.image = pygame.image.load(f'img/products/{random.randint(1, 19)}.png')
+        self.image = pygame.image.load(f'img/products/{random.randint(1, 20)}.png')
         self.image = pygame.transform.scale(self.image, (70, 70))
         self.image.set_colorkey((255, 255, 255))
         self.rect = self.image.get_rect()

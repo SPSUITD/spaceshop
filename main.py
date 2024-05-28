@@ -4,7 +4,7 @@ import sys
 import pygame
 import random
 from demo import Fruits_MENU
-
+import time
 pygame.init()
 
 WIDTH, HEIGHT = 960, 600
@@ -94,7 +94,9 @@ def main_menu():
 
         screen.blit(text_surface, text_rect)
         for event in pygame.event.get():
-            if event.type == pygame.QUIT:
+            if event.type == pygame.QUIT or event.type == pygame.USEREVENT and event.button == close_btn:
+
+                time.sleep(.5)
                 running = False
                 pygame.quit()
                 sys.exit()
@@ -110,6 +112,8 @@ def main_menu():
                             all_sprites.add(expl)
                             boom_sound.play()
                             break
+
+
 
             for btn in [settings_btn, start_btn, close_btn]:
                 btn.handle_event(event)
