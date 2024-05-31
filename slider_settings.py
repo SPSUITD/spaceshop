@@ -1,6 +1,6 @@
 import pygame
 import sys
-# слайдер для настроек напрмиер сложность или количество фруктов
+# слайдер  для настроек напрмиер сложность или количество фруктов
 
 class Slider:
     def __init__(self, x, y, width, height, slider_color, thumb_color, start_value, stop_value, step=1):
