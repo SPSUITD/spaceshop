@@ -366,7 +366,7 @@ def start_game():
 
             :return:
             '''
-            d_win.add(DialogWindow(self.memory_products, self.killer_product, time=self.settings['time']))
+            d_win.add(DialogWindow(self.memory_products, self.killer_product, time=max(1, self.settings['time'] - round_number)))
 
 
 
