@@ -1,5 +1,6 @@
 import pygame
 
+# класс кнопки с картинкой
 class ImageButton:
     def __init__(self,
                  x, y,
