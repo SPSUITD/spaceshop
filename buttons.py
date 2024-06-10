@@ -1,6 +1,5 @@
 import pygame
 
-# класс кнопки с картинкой
 class ImageButton:
     def __init__(self,
                  x, y,
@@ -11,6 +10,7 @@ class ImageButton:
                  hover_img_path=None,
                  sound_path=None,
                  opacity=None):
+
         self.x = x
         self.y = y
         self.width = width
@@ -46,7 +46,7 @@ class ImageButton:
             current_image = self.image
 
         screen.blit(current_image, self.rect.topleft)
-        font = pygame.font.Font(None, 36)
+        font = pygame.font.Font('font/agat-8.ttf', 36)
         text_surface = font.render(self.text, True, (255, 255, 255))
         text_rect = text_surface.get_rect(center=self.rect.center)
         screen.blit(text_surface, text_rect)
