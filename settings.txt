@@ -1,6 +1,6 @@
 record=500
 record_minigame=1400
 products_memory=2
-extra_products=8
+extra_products=7
 sound=1
-time=3
+time=2
